@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet">
+  <script src="./js/scripts.js"></script>
+  <title>Accueil - Picabou</title>
+</head>
+<body class="w-lvw h-lvh overflow-x-hidden">
+    <nav class="bg-orange-200 w-full h-14 fixed top-0 z-">
+        <div class="mx-auto px-2 md:px-6 lg:px-8 w-full h-14">
+            <div class="relative flex w-full h-14 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-orange-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                            Icon when menu is closed.
+                            Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <svg x-description="Icon when menu is closed." x-state:on="Menu open" x-state:off="Menu closed" class="h-6 w-6 block" :class="{ 'hidden': open, 'block': !(open) }" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                        <!--
+                            Icon when menu is open.
+                            Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-end md:items-stretch md:justify-between">
+                    <div class="flex flex-shrink-0 items-center md:hidden px-4">
+                        <img class="h-8 w-auto" src="./images/logo.png" alt="Your Company">
+                    </div>
+                    <div class="hidden md:block md:justify-start">
+                        <div class="flex space-x-4">
+                            <a href="./index.html" class="bg-pink-400 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Accueil</a>
+                            <a href="#" class="text-gray-600 hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Programmes</a>
+                            <a href="#" class="text-gray-600 hover:bg-green-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Equipe</a>
+                            <a href="#" class="text-gray-600 hover:bg-amber-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Galerie</a>
+                            <a href="#" class="text-gray-600 hover:bg-indigo-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                    <div class="hidden justify-end md:flex">
+                        <img class="h-8 w-auto" src="./images/logo.png" alt="Your Company">
+                    </div>
+                </div
+            </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden w-full" id="mobile-menu">
+            <div class="w-full space-y-1 pb-3 pt-2 bg-orange-200">
+                <a href="./index.html" class="bg-pink-400 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Accueil</a>
+                <a href="#" class="text-gray-600 hover:bg-blue-400 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Programmes</a>
+                <a href="#" class="text-gray-600 hover:bg-green-400 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Equipe</a>
+                <a href="#" class="text-gray-600 hover:bg-amber-400 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Galerie</a>
+                <a href="#" class="text-gray-600 hover:bg-indigo-400 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col w-full h-auto bg-slate-100 flex-grow pt-[56px]"> <!--contenu page-->
+        <div class="bg-fixed bg-center w-full sm:h-24 md:h-36 lg:h-44 xl:h-52 2xl:h-72" style="background-image: url(./images/motif.png);"></div>
+        <div class="flex justify-center items-center w-full h-auto pt-5 pb-2"> <!--text-->
+            <p class="sm:w-[30rem] lg:w-[40rem] xl:w-[56rem] bg-indigo-200/50 pl-4 px-2 py-2 rounded-md xl:text-xl text-center">PICABOU est une crèche et halte-garderie qui accueille les enfants de 3 mois à 8 ans.<br>Elle est composée d’une équipe de professionnels de la petite enfance réunis autour d’un intérêt commun : l’éveil et le bien-être de l’enfant.<br><br>En parallèle, un pôle évènementiel organise des activités ponctuelles : des anniversaires, après-midis festives - récréatives pour tout âge et des soirées à thème adaptées aux enfants jusqu’à 12 ans.<br><br>L’établissement vous accueille du lundi au vendredi de 7h30 à 17h45.</p>
+        </div>
+        <div class="w-lvw h-auto pt-3 pb-2"> <!--slide images-->
+            <div class="mx-auto py-4 bg-red-300/50 rounded-md px-4  sm:w-[30rem] sm:h-[300px] lg:w-[40rem] xl:w-[56rem] xl:h-[450px] flex items-center justify-center">
+                <div class="relative">
+                    <!-- Carousel container -->
+                    <div class="carousel flex items-center justify-center">
+                        <div class="carousel-item"><img src="./images/garderie.jpg" alt="Image 1" class="sm:w-[400px] lg:w-[540px] xl:w-[700px] max-h-[420px]"></div>
+                        <div class="carousel-item"><img src="./images/image1.webp" alt="Image 2" class="sm:w-[400px] lg:w-[540px] xl:w-[700px]"></div>
+                        <div class="carousel-item"><img src="./images/image2.jpg" alt="Image 3" class="sm:w-[400px] lg:w-[540px] xl:w-[700px]"></div>
+                        <div class="carousel-item"><img src="./images/image3.webp" alt="Image 3" class="sm:w-[400px] lg:w-[540px] xl:w-[700px]"></div>
+                    </div>
+                    <!-- Previous button -->
+                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 py-2 bg-white/50 rounded-full" id="prevBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>                          
+                    </button>
+                    <!-- Next button -->
+                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 py-2 bg-white/50 rounded-full" id="nextBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>                          
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center w-full">
+            <div class="flex justify-around sm:w-[30rem] lg:w-[40rem] xl:w-[56rem] pt-3 pb-5"> <!--social media-->
+                <div class="bg-pink-400 rounded-md w-auto h-12 flex justify-center items-center px-3 gap-2">
+                        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" widht="38" height="38">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect fill="none" height="4.8" rx="1.6" width="27.2" x="12.4" y="26"></rect> <rect fill="none" height="4.8" rx="1.6" width="24" x="12.4" y="35.6"></rect> <g> <path d="m36.4 14.8h8.48a1.09 1.09 0 0 0 1.12-1.12 1 1 0 0 0 -.32-.8l-10.56-10.56a1 1 0 0 0 -.8-.32 1.09 1.09 0 0 0 -1.12 1.12v8.48a3.21 3.21 0 0 0 3.2 3.2z"></path> <path d="m44.4 19.6h-11.2a4.81 4.81 0 0 1 -4.8-4.8v-11.2a1.6 1.6 0 0 0 -1.6-1.6h-16a4.81 4.81 0 0 0 -4.8 4.8v38.4a4.81 4.81 0 0 0 4.8 4.8h30.4a4.81 4.81 0 0 0 4.8-4.8v-24a1.6 1.6 0 0 0 -1.6-1.6zm-32-1.6a1.62 1.62 0 0 1 1.6-1.55h6.55a1.56 1.56 0 0 1 1.57 1.55v1.59a1.63 1.63 0 0 1 -1.59 1.58h-6.53a1.55 1.55 0 0 1 -1.58-1.58zm24 20.77a1.6 1.6 0 0 1 -1.6 1.6h-20.8a1.6 1.6 0 0 1 -1.6-1.6v-1.57a1.6 1.6 0 0 1 1.6-1.6h20.8a1.6 1.6 0 0 1 1.6 1.6zm3.2-9.6a1.6 1.6 0 0 1 -1.6 1.63h-24a1.6 1.6 0 0 1 -1.6-1.6v-1.6a1.6 1.6 0 0 1 1.6-1.6h24a1.6 1.6 0 0 1 1.6 1.6z"></path> </g> </g>
+                        </svg>
+                    <a href="./pre-inscription.html" class="text-center text-white hover:underline">Pré-inscrivez votre enfant</a>
+                </div>
+                <div class="bg-blue-400 rounded-md w-auto h-12 flex justify-center items-center px-3 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0,0,256,256">
+                        <g fill-opacity="0.96863" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.013 3.693,9.153 8.505,9.876v-7.226h-2.474v-2.629h2.474v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c1.153,0 1.762,0.085 2.051,0.124v2.294h-1.642c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h2.995l-0.406,2.629h-2.588v7.247c4.881,-0.661 8.646,-4.835 8.646,-9.897c0,-5.523 -4.477,-10 -10,-10z"></path></g></g>
+                    </svg>
+                   <a href="https://www.facebook.com/picaboudkr/" class="text-center text-white hover:underline">Picabou</a>
+                </div>
+                <div class="bg-green-400 rounded-md w-auto h-12 flex justify-center items-center px-3 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0,0,256,256">
+                        <g fill-opacity="0.96863" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z"></path></g></g>
+                    </svg>
+                    <a href="https://www.instagram.com/picaboudkr/" class="text-center text-white hover:underline">Picabou</a>
+                    <p class="text-center text-white">/</p>
+                    <a href="https://www.instagram.com/pica_plus/" class="text-center text-white hover:underline">PicaPlus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-green-200 bottom-0 w-full h-auto py-2 flex flex-col justify-center items-center">
+        <div class="w-[90lvw] flex flex-col items-center justify-center">
+            <p class="text-center text-2xl text-blue-700 pb-2">Un établissement voué à l’éveil des enfants</p>
+            <div class="flex justify-center">
+                <hr class="border-1 border-black border-t" style="width: 100px;">
+            </div>
+            <div class="pt-2">
+                <p class="text-center">
+                    <a href="https://maps.app.goo.gl/T11EgTan1mnX2g4f9" class="hover:underline">PICABOU – 11 rue Wagane Diouf X Galandou Diouf, Dakar Plateau</a> – Tél : <a href="tel:+221 33 821 29 46" class="hover:underline">33 821 29 46</a> / <a href="tel: +221 77 181 45 30" class="hover:underline">77 181 45 30</a> – <a href="mailto:info@picabou.sn" class="hover:underline">info@picabou.sn</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
